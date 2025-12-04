@@ -12,7 +12,7 @@ docker run -d --name normflix_pg ^
   -e POSTGRES_USER=normadmin ^
   -e POSTGRES_PASSWORD=normpass ^
   -e POSTGRES_DB=normflix ^
-  -p 5432:5432 ^
+  -p 5433:5432 ^
   postgres
 
 
