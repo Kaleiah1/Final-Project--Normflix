@@ -11,7 +11,9 @@ CREATE TABLE subscription_plan(
 CREATE TABLE user_account(
     account_id VARCHAR(50)  PRIMARY KEY,
     plan_id VARCHAR(50) NOT NULL REFERENCES subscription_plan(plan_id),
-    email TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
+    password TEST NOT NULL,
+    auth_token TEXT,
     creation_date DATE NOT NULL
 );
 
