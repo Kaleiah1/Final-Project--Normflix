@@ -32,3 +32,20 @@ Step 3: Verify the tables
 1. docker exec -it normflix_pg psql -U normadmin -d normflix
 2. \dt
 3. \q    (to quit)
+
+step 4: 
+To start Flask in the project folder run the command: 
+
+py app.py
+
+step 5:
+In a new terminal run the commands: 
+
+py scripts/admin_demo.py
+
+then:
+
+py scripts/user_demo.py
+
+this will creates subscription pla, registers user, log in a user, create a profile, add content, view movie list, add to wishlist, save progress in content + continue watching 
+
